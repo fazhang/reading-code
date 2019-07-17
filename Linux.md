@@ -1,6 +1,6 @@
 ## Linux系统
 
-###操作系统
+### 操作系统
 >以下为各种细碎的记录
 
 Linux 承袭了UNIX `everything is a file `的设计哲学。在系统里面无论是真实的文件、外接设备、虚拟设备、网络socket、内核变量等，均体现为FILE. 
@@ -8,12 +8,12 @@ Linux 承袭了UNIX `everything is a file `的设计哲学。在系统里面无�
 内核暴露出来一些控制变量，也可在虚拟的/proc 文件系统中读取和更改。
 
 
-##Bash 
+## Bash 
 
-###grep 
-主要基于https://linux.die.net/man/1/grep 
-`-V` `--version`
-	这个没啥好说的
+### grep 
+主要基于https://linux.die.net/man/1/grep  <br/>
+`-V` `--version`<br/>
+	这个没啥好说的<br/>
 `-E`  `--extended-regexp`
 	使用`扩展正则表达式ERE` ，这里与`-e ` 有关    
 	`--` 开头的参数在Linux Shell 里面被称为长选项，一般会通过getopt getopt_long 函数来实现, `#include <getopt.h>`。 假定指定的匹配pattern以-开头。 shell 无法分辨传入的是选项，还是参数。 所以可以用长选项来实现
